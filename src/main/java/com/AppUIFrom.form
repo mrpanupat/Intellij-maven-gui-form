@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="com.AppUIFrom">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="4" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="2b09c" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="438" height="35"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="54121" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Plain text"/>
+            </properties>
+          </component>
+          <component id="eb9f1" class="javax.swing.JTextField" binding="textField1" default-binding="true">
+            <constraints/>
+            <properties>
+              <columns value="20"/>
+              <font/>
+            </properties>
+          </component>
+          <component id="95db4" class="javax.swing.JButton" binding="encryptButton">
+            <constraints/>
+            <properties>
+              <text value="encrypt"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="436a7" layout-manager="FlowLayout" hgap="5" vgap="5" flow-align="1">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false">
+            <preferred-size width="438" height="35"/>
+          </grid>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="9f4ab" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <text value="Encrypt text"/>
+            </properties>
+          </component>
+          <component id="c064f" class="javax.swing.JTextField" binding="cipherText">
+            <constraints/>
+            <properties>
+              <columns value="20"/>
+              <font/>
+            </properties>
+          </component>
+          <component id="4cb40" class="javax.swing.JButton" binding="decryptButton">
+            <constraints/>
+            <properties>
+              <text value="decrypt"/>
+            </properties>
+          </component>
+          <component id="70f95" class="javax.swing.JTextField" default-binding="true">
+            <constraints/>
+            <properties>
+              <editable value="false"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="61f1" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="19704" class="javax.swing.JTextField" binding="output1">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="ba8c6" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="70a73" class="javax.swing.JTextField" binding="output2">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <editable value="false"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>

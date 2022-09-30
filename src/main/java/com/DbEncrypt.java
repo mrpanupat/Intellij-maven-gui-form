@@ -46,6 +46,12 @@ public class DbEncrypt {
             appUIFrom.blacklistOutput.setText("INSERT INTO irs.irs_watchlist (id, identity, firstname, lastname, country_name, created_date, updated_date) VALUES ('" + uuid + "', '" + id + "', '" + firstName + "', '" + lastName + "', 'MYANMAR', now(), now());");
         });
 
+        appUIFrom.makeUuidButton.addActionListener(e -> {
+            String senderId = appUIFrom.accumSenderId.getText();
+            UUID uuid = UUID.nameUUIDFromBytes(senderId.toUpperCase().getBytes());
+            appUIFrom.accumOutputText.setText(uuid.toString());
+        });
+
         f.setContentPane(appUIFrom.mainPanel);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.pack();

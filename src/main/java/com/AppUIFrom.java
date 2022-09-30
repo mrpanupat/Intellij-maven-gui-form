@@ -17,4 +17,15 @@ public class AppUIFrom {
     public JTextField blackListLastName;
     public JButton genBlackList;
     public JTextField blacklistOutput;
+    public JTabbedPane tabbedPane1;
+    public JPanel Database;
+    public JPanel encInput;
+    public JPanel encOutput;
+    public JPanel decInput;
+    public JPanel decOuptut;
+    public JPanel Blacklist;
+    public JPanel Accumulate;
+    public JTextField accumSenderId;
+    public JButton makeUuidButton;
+    public JTextField accumOutputText;
 }

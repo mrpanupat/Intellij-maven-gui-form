@@ -6,12 +6,11 @@ import org.bouncycastle.crypto.params.AEADParameters;
 import org.bouncycastle.crypto.params.KeyParameter;
 
 import javax.swing.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Base64;
+import java.util.UUID;
 
 public class DbEncrypt {
 
@@ -36,6 +35,15 @@ public class DbEncrypt {
         appUIFrom.decryptButton.addActionListener(e -> {
             String plaintext = decrypt(appUIFrom.cipherText.getText());
             appUIFrom.output2.setText(plaintext);
+        });
+
+        appUIFrom.genBlackList.addActionListener(e -> {
+            String id = appUIFrom.blackListId.getText();
+            String firstName = appUIFrom.blackListFirstName.getText();
+            String lastName = appUIFrom.blackListLastName.getText();
+            String key = id + firstName.toUpperCase() + lastName.toUpperCase();
+            String uuid = UUID.nameUUIDFromBytes(key.getBytes()).toString();
+            appUIFrom.blacklistOutput.setText("INSERT INTO irs.irs_watchlist (id, identity, firstname, lastname, country_name, created_date, updated_date) VALUES ('" + uuid + "', '" + id + "', '" + firstName + "', '" + lastName + "', 'MYANMAR', now(), now());");
         });
 
         f.setContentPane(appUIFrom.mainPanel);
